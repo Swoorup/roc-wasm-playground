@@ -1,0 +1,26 @@
+[package]
+name = "test-roc-playground"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+wasmtime = "32.0.0"
+roc_reporting = { git = "https://github.com/roc-lang/roc.git" }
+roc_types = { git = "https://github.com/roc-lang/roc.git" }
+roc_target = { git = "https://github.com/roc-lang/roc.git" }
+roc_repl_ui = { git = "https://github.com/roc-lang/roc.git" }
+roc_gen_wasm = { git = "https://github.com/roc-lang/roc.git" }
+roc_collections = { git = "https://github.com/roc-lang/roc.git" }
+roc_repl_eval = { git = "https://github.com/roc-lang/roc.git" }
+roc_parse = { git = "https://github.com/roc-lang/roc.git" }
+roc_load_internal = { git = "https://github.com/roc-lang/roc.git" }
+bumpalo = "3.17.0"
+anyhow = "1.0.98"
+tokio = { version = "1.35.0", features = ["full"] }
+
+[build-dependencies]
+wasi_libc_sys = { git = "https://github.com/roc-lang/roc.git" }
+roc_bitcode = { git = "https://github.com/roc-lang/roc.git" }
+
+# regex = { git = "https://github.com/roc-lang/roc.git" }
+# regex = { git = "https://github.com/roc-lang/roc.git" }
